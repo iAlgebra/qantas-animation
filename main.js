@@ -2,8 +2,9 @@
 
 var tl = new TimelineMax();
 tl
-	.to("#mask", 1.5, {scale: 2.7, directionalRotation:"45_ccw", x: 66, y: 90, ease:Sine.easeOut})
-	.to("#mask", 1, {scale: 7, x: 253, y: 201}, "-=0.2")
+	.to("#mask", 1.5, {scale: 2.7, directionalRotation:"45_ccw", transformOrigin: '47.7% 51.1%'})
+	.to("#mask", 0.8, {scale: 1.8}, "-=0.5")
+	.to("#mask", 1, {scale: 7, x: -36, y: 7}, "-=0.5")
 	.to("#red", 1.5, {rotation: 360, scale: 7}, "-=2.5")
 	.to("#blue", 1.5, {rotation: 180, scale: 3}, "-=2.5")
 	.to("#red", 1, {x: 156, y: -132}, "-=1")
