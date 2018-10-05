@@ -1,0 +1,33 @@
+//create a timeline instance
+
+var tl = new TimelineMax();
+tl
+	.to("#mask", 1.5, {scale: 2.7, directionalRotation:"45_ccw", x: 66, y: 90, ease:Sine.easeOut})
+	.to("#mask", 1, {scale: 7, x: 253, y: 201}, "-=0.2")
+	.to("#red", 1.5, {rotation: 360, scale: 7}, "-=2.5")
+	.to("#blue", 1.5, {rotation: 180, scale: 3}, "-=2.5")
+	.to("#red", 1, {x: 156, y: -132}, "-=1")
+	.to("#blue", 1, {x: -156, y: 156}, "-=1")
+	.to("#blue", 0.1, {opacity: 0})
+	.to("#white", 1.3, {opacity: 0.8}, "-=0.5")
+	.to("#text1", 1, {opacity: 1}, "-=1.5")
+	.to("#text1", 0, {x: 58, y: 15}, "-=1.5")
+	.to("#text1", 1, {opacity: 0}, "+=2")
+	.to("#text2", 1, {opacity: 1}, "-=0.5")
+	.to("#text2", 0, {x: 32, y: 36}, "-=1.5")
+	.to("#text2", 1, {opacity: 0}, "+=2")
+	.to("#red", 1, {scaleX: 28, scaleY: 25, x: -67, y: -109}, "-=1")
+	.to("#white", 1, {scaleX: 3, scaleY: 3, x: 311, y: -4}, "-=1")
+	.to("#white", 1, {opacity: 1, x: 300, y: -145}, "-=0.8")
+	.to("#red", 1, {opacity: 1, scaleX: 38, scaleY: 30, x: 20, y: -3}, "-=1")
+	.to("#qantas-m", 1, {opacity: 1, y: 50}, "-=1")
+	.to("#aa", 1, {opacity: 1, y: -30}, "-=1")
+	.to("#text3", 1, {opacity: 1}, "+=2")
+	.to("#qantas-m", 1, {opacity: 0, scaleX: 0.8, scaleY: 0.8, x: -6, y: 139}, "-=1")
+	.to("#qantas-c", 1, {opacity: 1, scaleX: 0.8, scaleY: 0.8, x: -6, y: 89}, "-=1")
+	.to("#aa", 1, {scaleX: 0.8, scaleY: 0.8, x: -40, y: 59}, "-=1")
+	.to("#white", 1, {scaleX:3.5, scaleY:3.5, directionalRotation:"-155_ccw", x: 54, y: 85}, "-=1")
+	.to("#divider", 1, {opacity: 1, scaleX: 2, scaleY: 3}, "-=1")
+	.to(".info", 1, {opacity: 1}, "-=1")
+	.to("#red-end", 1, {opacity: 0.3, x: -146, y: 131}, "-=0.5")
+	.to("#btn", 1.5, {opacity: 1}, "-=0.5");
